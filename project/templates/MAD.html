@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container mt-14 pt-10 py-20">
+    <div class="row">
+        <div class="col-lg-6 mx-auto text-center">
+    <h1 class="text-center text-3xl font-bold mb-4 mt-10">Mobile App Development</h1>
+            <img src="{% static 'images/MAD.png' %}" alt="Mobile App Development" class="img-fluid rounded mb-4">
+        </div>
+        <div class="col-lg-8 mx-auto text-center">
+            <h2>Mobile App Development</h2>
+            <p class="lead">We specialize in developing mobile applications that provide a seamless user experience on all devices. Our expert team of developers and designers ensure that your app not only looks great but also performs flawlessly.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">iOS App Development</li>
+                        <li class="list-group-item">Android App Development</li>
+                        <li class="list-group-item">Cross-Platform App Development</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">App UI/UX Design</li>
+                        <li class="list-group-item">App Maintenance and Support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4">
+                <p>Our development process involves:</p>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Requirement Analysis: Understanding your business needs and objectives.</li>
+                    <li class="list-group-item">Prototyping: Creating wireframes and mockups to visualize the app.</li>
+                    <li class="list-group-item">Development: Coding the app with the latest technologies and best practices.</li>
+                    <li class="list-group-item">Testing: Rigorous testing to ensure a bug-free and smooth user experience.</li>
+                    <li class="list-group-item">Deployment: Launching the app on app stores and ensuring it meets all guidelines.</li>
+                    <li class="list-group-item">Maintenance: Providing ongoing support and updates to keep your app running smoothly.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

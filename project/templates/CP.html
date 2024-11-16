@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container mt-14 pt-12 py-20">
+    <div class="row">
+        <h1 class="text-center text-3xl font-bold mb-4">Confidential Printing</h1>
+        <div class="col-lg-6 mx-auto text-center">
+            <img src="{% static 'images/CP.jpg' %}" alt="Confidential Printing" class="img-fluid rounded mb-4">
+        </div>
+        <div class="col-lg-8 mx-auto text-center">
+            <h2>Confidential Printing</h2>
+            <p class="lead">Our confidential printing services ensure that your sensitive documents are handled with the utmost care and security, from creation to delivery.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Secure Document Handling</li>
+                        <li class="list-group-item">Encrypted Data Transmission</li>
+                        <li class="list-group-item">Strict Access Controls</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Confidential Delivery</li>
+                        <li class="list-group-item">Audit Trails</li>
+                        <li class="list-group-item">Regulatory Compliance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4">
+                <p>Benefits of Confidential Printing:</p>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Enhanced Security: Protects sensitive information from unauthorized access and breaches.</li>
+                    <li class="list-group-item">Compliance: Ensures adherence to industry standards and legal regulations regarding data protection.</li>
+                    <li class="list-group-item">Reliability: Provides a trustworthy solution for handling confidential documents.</li>
+                    <li class="list-group-item">Efficiency: Streamlines the printing and delivery process while maintaining high security standards.</li>
+                    <li class="list-group-item">Peace of Mind: Gives you confidence that your confidential information is managed securely.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="career" class="career py-12 bg-gray-100 mt-24">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800">Join Our Team</h1>
+            <p class="text-lg text-gray-600 py-8">Explore exciting career opportunities with A.M.I.T Technology</p>
+        </div>
+
+        {% if job_vacancies %}
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
+            {% for job in job_vacancies %}
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">{{ job.title }}</h3>
+                <p class="text-gray-600 mb-2"><strong>Roles and Responsibilities:</strong></p>
+                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                    <li>{{ job.responsibilities }}</li>
+                </ul>
+                <p class="text-gray-600 mb-2"><strong>Requirements:</strong></p>
+                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                    <li>{{ job.requirements }}</li>
+                </ul>
+                <p class="text-gray-600 mb-2"><strong>Location:</strong> {{ job.location }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="text-center mb-8">
+            <h3 class="text-3xl font-bold text-gray-800">Apply Now</h3>
+        </div>
+
+        <!-- Alert Messages -->
+        {% if messages %}
+        <div class="mb-4">
+            {% for message in messages %}
+            <div class="p-4 mb-4 text-sm text-green-700 bg-black-400 rounded-lg" role="alert">
+                {{ message }}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-lg mx-auto">
+            <form action="{% url 'career' %}" method="post" enctype="multipart/form-data" class="space-y-6">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="first_name" class="block text-gray-700 font-medium mb-2">First Name</label>
+                    <input type="text" id="first_name" name="first_name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name" class="block text-gray-700 font-medium mb-2">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                    <input type="text" id="phone" name="phone" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" required>
+                </div>
+                <div class="form-group">
+                    <label for="address" class="block text-gray-700 font-medium mb-2">Address</label>
+                    <input type="text" id="address" name="address" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" required>
+                </div>
+                <div class="form-group">
+                    <label for="college_name" class="block text-gray-700 font-medium mb-2">College Name</label>
+                    <input type="text" id="college_name" name="college_name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" required>
+                </div>
+                <div class="form-group">
+                    <label for="marks" class="block text-gray-700 font-medium mb-2">Grade</label>
+                    <input type="text" id="marks" name="marks" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" required>
+                </div>
+                <div class="form-group">
+                    <label for="resume" class="block text-gray-700 font-medium mb-2">Resume</label>
+                    <input type="file" id="resume" name="resume" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" required>
+                </div>
+                <button type="submit" class="w-full bg-indigo-500 text-white py-2 px-4 rounded-lg font-medium hover:bg-indigo-600 focus:outline-none focus:bg-indigo-700">Submit</button>
+            </form>
+        </div>
+        {% else %}
+        <div class="text-center mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800">No Current Vacancies</h2>
+            <p class="text-gray-600">Please check back later for future opportunities</p>
+            <p class="text-gray-700 font-bold">Or Subscribe to our newsletter to get recent updates</p>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock content %}

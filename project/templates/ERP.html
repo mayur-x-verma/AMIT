@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container mt-14 pt-10 py-20">
+    <div class="row">
+        <div class="col-lg-6 mx-auto text-center">
+            <h1 class="text-center text-3xl font-bold mb-4">University ERP Solution</h1>
+            <img src="{% static 'images/ERP.jpg' %}" alt="ERP Solutions" class="img-fluid rounded mb-4">
+        </div>
+        <div class="col-lg-8 mx-auto text-center">
+            <h2>ERP Solutions</h2>
+            <p class="lead">Our ERP (Enterprise Resource Planning) solutions are designed to integrate and streamline your business processes, enhancing efficiency and productivity across your organization.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Comprehensive Integration</li>
+                        <li class="list-group-item">Real-Time Data Access</li>
+                        <li class="list-group-item">Customizable Modules</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Scalable Solutions</li>
+                        <li class="list-group-item">Improved Efficiency</li>
+                        <li class="list-group-item">Enhanced Reporting</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4">
+                <p>Benefits of ERP Solutions:</p>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Improved Collaboration: Facilitates better communication and collaboration between departments.</li>
+                    <li class="list-group-item">Enhanced Productivity: Automates routine tasks and processes, allowing employees to focus on more critical activities.</li>
+                    <li class="list-group-item">Better Decision Making: Provides real-time insights and data analytics to support informed decision-making.</li>
+                    <li class="list-group-item">Cost Savings: Reduces operational costs by streamlining business processes and eliminating redundancies.</li>
+                    <li class="list-group-item">Scalability: Can grow with your business, accommodating new processes and increased data volumes.</li>
+                    <li class="list-group-item">Regulatory Compliance: Helps ensure compliance with industry standards and regulations.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

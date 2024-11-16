@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="container mx-auto mt-14 pt-10 py-20">
+
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <div class="col-lg-6 mx-auto text-center">
+            <h1 class="text-center text-3xl font-bold mb-4">Online Exam Solutions</h1>
+            <img src="{% static 'images/OES.jpg' %}" alt="OMR / ICR Technology" class="img-fluid rounded mb-4">
+        </div> 
+        <p class="text-lg leading-relaxed">
+            Welcome to Online Exam Solution, your comprehensive platform for conducting exams seamlessly and securely online. Whether you're an educational institution, a corporate entity, or a certification body, our service is tailored to meet your assessment needs with efficiency and reliability.
+        </p>
+        
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold mb-2">Key Features:</h2>
+            <ul class="list-disc list-inside">
+                <li class="mb-2">Secure Online Assessments: Conduct exams with confidence using our robust security measures to prevent cheating and ensure integrity.</li>
+                <li class="mb-2">Flexible Exam Setup: Customize exams with various question types, time limits, and difficulty levels to suit your assessment criteria.</li>
+                <li class="mb-2">Real-time Monitoring: Monitor exam sessions in real-time to detect anomalies and ensure fairness.</li>
+                <li class="mb-2">Automated Grading: Instantly grade objective questions and provide immediate feedback to candidates.</li>
+                <li class="mb-2">Comprehensive Reporting: Access detailed reports and analytics to evaluate candidate performance and identify areas for improvement.</li>
+                <li class="mb-2">User-friendly Interface: Intuitive design for administrators, examiners, and candidates, making the exam-taking experience smooth and hassle-free.</li>
+                <li class="mb-2">Scalable and Reliable: Handle thousands of concurrent users without compromising on performance or reliability.</li>
+            </ul>
+        </div>
+        
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold mb-2">Why Choose Us?</h2>
+            <ul class="list-disc list-inside">
+                <li class="mb-2">Expert Support: Dedicated support team available 24/7 to assist you with any queries or technical issues.</li>
+                <li class="mb-2">Cost-effective: Affordable pricing plans tailored to fit your organization’s budget, without compromising on quality.</li>
+                <li class="mb-2">Customizable Solutions: Tailor our platform to meet your specific exam requirements, whether small-scale quizzes or large-scale certification exams.</li>
+            </ul>
+        </div>
+        
+        <div class="mt-8">
+            <p class="text-lg">Transform your assessment process with Online Exam Solution. Schedule a demo today and experience the future of online exams.</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

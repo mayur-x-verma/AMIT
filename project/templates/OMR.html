@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container mt-14 pt-12 py-20">
+    <div class="row">
+        <div class="col-lg-6 mx-auto text-center">
+            <h1 class="text-center text-3xl font-bold mb-4">OMR/ICR Solution</h1>
+            <img src="{% static 'images/OMRICR.jpg' %}" alt="OMR / ICR Technology" class="img-fluid rounded mb-4">
+        </div>
+        <div class="col-lg-8 mx-auto text-center">
+            <h2>OMR / ICR Technology</h2>
+            <p class="lead">Our OMR (Optical Mark Recognition) and ICR (Intelligent Character Recognition) technologies are designed to streamline data collection and processing. These cutting-edge solutions are ideal for various applications, ensuring accuracy and efficiency.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Automated Data Entry</li>
+                        <li class="list-group-item">High Accuracy</li>
+                        <li class="list-group-item">Quick Processing</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Scalable Solutions</li>
+                        <li class="list-group-item">Customizable Templates</li>
+                        <li class="list-group-item">Seamless Integration</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4">
+                <p>Benefits of OMR / ICR Technology:</p>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Efficiency: Significantly reduces the time needed for data entry and processing.</li>
+                    <li class="list-group-item">Accuracy: Minimizes errors that are common with manual data entry.</li>
+                    <li class="list-group-item">Cost-Effective: Reduces the need for manual labor, saving costs in the long run.</li>
+                    <li class="list-group-item">Versatile: Can be used in a variety of fields such as education, surveys, and market research.</li>
+                    <li class="list-group-item">Scalability: Easily handles large volumes of data.</li>
+                    <li class="list-group-item">Integration: Seamlessly integrates with existing systems and workflows.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

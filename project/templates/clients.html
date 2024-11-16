@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto" style="margin-top: 90px;">
+    <div class="flex flex-wrap -m-4 justify-center">
+      <!-- Client 1 -->
+      <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col items-center">
+          <img src="{% static 'images/harischandra.jpeg' %}" alt="Harishchandra PG College" class="w-32 h-32 mb-4">
+          <div class="flex-grow text-center">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">HARISHCHANDRA PG COLLEGE VARANASI</h2>
+            <p class="leading-relaxed text-base">Harish Chandra Postgraduate College, Varanasi is a Govt. aided college and is one of the premier seat of learning of Eastern U.P. under the auspices of Harish Chandra Vidyalaya Samiti (a non profitable charitable institution registered under Indian Society Act 1860.)</p>
+          </div>
+        </div>
+      </div>
+      <!-- Client 2 -->
+      <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col items-center">
+          <img src="{% static 'images/upclglogo.png' %}" alt="Uday Pratap College" class="w-32 h-32 mb-4">
+          <div class="flex-grow text-center">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">UDAY PRATAP COLLEGE VARANASI</h2>
+            <p class="leading-relaxed text-base">Established in 1949, Udai Pratap College is a leading institute in higher education, located in Varanasi, Uttar Pradesh. Students can pursue their education from the institute in Degree courses including Doctorate, PG and UG programs.</p>
+          </div>
+        </div>
+      </div>
+       <!-- Client 3 -->
+       <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col items-center">
+          <img src="{% static 'images/mukularanyam.jpeg' %}" alt="Harishchandra PG College" class="w-32 h-32 mb-4">
+          <div class="flex-grow text-center">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">MUKULARANYAM ENGLISH SCHOOL VARANASI</h2>
+            <p class="leading-relaxed text-base">Mukularanyam English School is a Co-Educational school affiliated to CBSE syllabus. Mukularanyam English School is located in Varanasi,Uttar Pradesh. The school was established in the year 2001 and is managed by Kallivayalil Education & Charitable Trust.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% endblock content %}
